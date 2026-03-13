@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Parte 1 - Grid Layout</title>
+<title>Layout lindo </title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,6 +24,21 @@
   footer  { grid-area: footer;  background: #2c3e50; color: white; display: flex; align-items: center; justify-content: center; }
 
   aside a { display: block; color: white; text-decoration: none; padding: 8px 0; }
+
+   aside a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+
+  aside a:hover {
+    background: #2c3e50;
+    color: white;
+  } 
 </style>
 </head>
 <body>
@@ -42,3 +57,4 @@
 
 </body>
 </html>
+
