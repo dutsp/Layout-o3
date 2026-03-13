@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Parte 1 - Grid Layout</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    display: grid;
+    grid-template-areas:
+      "header  header"
+      "sidebar content"
+      "footer  footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 50px;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+
+  header  { grid-area: header;  background: #2c3e50; color: white; display: flex; align-items: center; padding: 0 20px; }
+  aside   { grid-area: sidebar; background: #34495e; color: white; padding: 20px; }
+  main    { grid-area: content; background: #f4f6f9; padding: 20px; }
+  footer  { grid-area: footer;  background: #2c3e50; color: white; display: flex; align-items: center; justify-content: center; }
+
+  aside a { display: block; color: white; text-decoration: none; padding: 8px 0; }
+</style>
+</head>
+<body>
+
+  <header><h1>Cabeçalho</h1></header>
+
+  <aside>
+    <a href="#">Início</a>
+    <a href="#">Projetos</a>
+    <a href="#">Contato</a>
+  </aside>
+
+  <main><h2>Conteúdo</h2></main>
+
+  <footer>Rodapé</footer>
+
+</body>
+</html>
